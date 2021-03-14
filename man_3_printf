@@ -1,4 +1,4 @@
-.THE _PRINTF "17 MARCH 2021" "_printf man page"
+.TH _PRINTF "17 MARCH 2021" "_printf man page"
 .SH NAME
 .B _printf - print formatted output conversion.
 .SH SYNOPSIS
