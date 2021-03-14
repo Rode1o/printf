@@ -1,7 +1,7 @@
 .THE _PRINTF "17 MARCH 2021" "_printf man page"
 .SH NAME
 .B _printf - print formatted output conversion.
-.SH SYNOPSYS
+.SH SYNOPSIS
 Header #include "holberton.h" is needed, to use this function.
 _printf - FORMAT [ARGUMENT]...
 _printf - Options.
