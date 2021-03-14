@@ -1,6 +1,6 @@
 # printfProject
 
-**Building Printf function**
+**Building a customized Printf function**
 
 ## Diary Blog:
 <details>
