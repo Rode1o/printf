@@ -1,7 +1,6 @@
 #include "holberton.h"
-
 /**
- * print_percent - prints a percent sign
+ * print_percent - prints % sign
  *
  * Return: number of characters printed
  */

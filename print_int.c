@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_int - calls a function to print an int in base 10
- * @a: int to be printed
+ * print_int - calls func "number" to print a decimal int
+ * @a: int 
  *
  * Return: number of characters printed
  */
@@ -14,8 +14,8 @@ int print_int(int a)
 	return (token);
 }
 /**
- * number - prints an integer in base 10
- * @n: integer to print
+ * number - prints a decimal int 
+ * @n: int
  *
  * Return: number of characters printed
  */
