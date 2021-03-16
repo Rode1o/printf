@@ -2,7 +2,7 @@
 
 /**
  * print_string - prints a string
- * @s: pointer to string to be printed
+ * @s: pointer to string 
  *
  * Return: number of characters printed
  */
@@ -12,8 +12,7 @@ int print_string(char *s)
 
 	if (s == NULL)
 	{
-		_printf("(null)");
-		return (6);
+		return (0);
 	}
 	for (i = 0; s[i] != '\0'; ++i)
 	{
