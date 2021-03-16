@@ -1,71 +1,43 @@
 #include "holberton.h"
 /**
- * _printf - gets an output from given format
- * @format: character string
- * Return: the number of characters printed excluding the null byte
- * used to end output to strings
+ * _printf - parses input string and calls f_output to choose which function
+ * to use for formatting based on specifiers
+ * @format: pointer to string containing specifiers
+ *
+ * Return: number of characters printed
  */
+
 int _printf(const char *format, ...)
 {
-	int i = 0;
-	int p_int;
-	char *p_str;
-	va_list list;
+	va_list arg_list;
+	unsigned int i = 0, len = 0;
+	int token = 0, er = 0;
 
-	va_start(list, format);
-
-	while (*format)
+	if (!format)
+		return (-1);
+	va_start(arg_list, format);
+	while (format[len])
+		++len;
+	for (i = 0; i < len; ++i)
 	{
-		if (*format == '%')
+		if (format[i] == '%')
 		{
-			format++;
-			switch (*format)
-			{
-			case 'c':
-				i = va_arg(list, int);
-				_putchar(i);
-				format++;
+			++i;
+			while (format[i] == ' ')
 				i++;
-				break;
-			case 's':
-				p_str = va_arg(list, char *);
-				printstring(p_str);
-				format++;
-				i++;
-				break;
-			case '%':
-				_putchar('%');
-				format++;
-				i++;
-				break;
-			case 'd':
-				p_int = va_arg(list, int);
-				printinteger(p_int);
-				format++;
-				i++;
-				break;
-			case 'i':
-				p_int = va_arg(list, int);
-				printinteger(p_int);
-				format++;
-				i++;
-				break;
-			case '\0':
-				break;
-			default:
-				_putchar('%');
-				_putchar(*format);
-				format++;
-				i += 2;
-			}
+			if (format[i] == '\0')
+				return (-1);
+			er = out_print(format[i], &arg_list);
+			if (er < 0)
+				return (-1);
+			token =+ er;
 		}
 		else
 		{
-			_putchar(*format);
-			format++;
-			i++;
+			_putchar(format[i]);
+			token++;
 		}
 	}
-	va_end(list);
-	return (i);
+	va_end(arg_list);
+	return (token);
 }
