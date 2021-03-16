@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_R - encodes a string using ROT13 encryption and prints it
+ * print_R - using ROT13 encryption encodes a string and print it
  * @str: string to be encrypted
  *
  * Return: nunber of characters printed
