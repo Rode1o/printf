@@ -13,7 +13,7 @@ int print_rev(char *str)
 
 	if (!str)
 	{
-		s = ("(null)");
+		str = "(null)";
 	}
 
 	for (a = 0; str[a]; a++)

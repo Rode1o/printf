@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_unshex - prints an unsigned int in hexadecimal
- * @a: int to be printed
- * @flag: tells function whether to print in uppercase or lowercase
+ * print_unshex - prints an unsigned int in hex format
+ * @a: int 
+ * @flag: defines if uppercase or lowercase
  *
  * Return: number of characters printed
  */
