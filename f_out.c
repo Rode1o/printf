@@ -27,9 +27,6 @@ int out_print(char f, va_list *arg_list)
 		token += print_percent();
 		break;
 	case 'i':
-		i = va_arg(arg_list, int);
-		token += print_int(i);
-		break;
 	case 'd':
 		d = va_arg(arg_list, int);
 		token += print_int(d);
