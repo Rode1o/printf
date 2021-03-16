@@ -17,8 +17,6 @@ Print ARGUMENTS(s) according to FORMAT.
 .PP
 %s - Print the strings.
 .PP
-%S - Print strings. Non printable characters (0 < ASCII value < 32 or =>127) are printed this way: \x, followed by the ASCCI code value in hexadecimal.
-.PP
 %u - Print a unsigned integer.
 .PP
 %r - Print a reversed string.
