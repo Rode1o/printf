@@ -3,7 +3,7 @@
 # printfProject #
 
 **Building a customized Printf function**
-This project a mini printf's function that we can find in the library <stdio.h>, if we are using the C Language. Bassically allow us to print any arguemnt given to standard or terminal output. This menas that we can print any combiantion of strings, integersm and other different data types.
+This project is a mini printf function that we can find in the library <stdio.h>, if we are using the C Language. Basically it allows us to print any argument given to standard or terminal output. This means that we can print any combination of strings, integers and other different data types.
 
 # HOW IT WORKS? #
 <img src="https://github.com/Rode1o/printf/blob/main/Diseño%20sin%20título%20(1).gif" />
