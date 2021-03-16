@@ -10,9 +10,9 @@ int print_string(char *s)
 {
 	int i, token = 0;
 
-	if (s == NULL)
+	if (!s)
 	{
-		return ('\0');
+		s = "(null)";
 	}
 	for (i = 0; s[i] != '\0'; ++i)
 	{
