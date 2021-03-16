@@ -12,7 +12,7 @@ int print_string(char *s)
 
 	if (s == NULL)
 	{
-		return (NULL);
+		return;
 	}
 	for (i = 0; s[i] != '\0'; ++i)
 	{
