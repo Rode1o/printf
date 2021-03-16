@@ -44,7 +44,7 @@ int out_print(char f, va_list *arg_list)
 		token += print_bin(b);
 		break;
 	default:
-		token += out_print(f, arg_list);
+		token += out_pr1nt(f, arg_list);
 		break;
 	}
 	return (token);
