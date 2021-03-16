@@ -11,12 +11,12 @@ int print_R(char *str)
 	int a, b, token = 0;
 	char x[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	char y[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	
+
 	if (str == NULL)
 		return (_printf("(null)"));
 	for (a = 0; str[a] != '\0'; a++)
 	{
-		for (b = 0; y < 52; y++)
+		for (b = 0; b < 52; b++)
 		{
 			if (str[a] == y[b])
 			{

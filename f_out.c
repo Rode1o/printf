@@ -23,7 +23,7 @@ int out_print(char f, va_list *arg_list)
 		s = va_arg(arg_list, char *);
 		token += print_string(s);
 		break;
-	case '%'
+	case '%':
 		token += print_percent();
 		break;
 	case 'i':
@@ -40,7 +40,7 @@ int out_print(char f, va_list *arg_list)
 		token += print_R(R);
 		break;
 	case 'b':
-		c = va_arg(arg_list, unsigned int);
+		b = va_arg(arg_list, unsigned int);
 		token += print_bin(b);
 		break;
 	default:
@@ -62,8 +62,6 @@ int out_pr1nt(char f, va_list *arg_list)
 {
 	int token = 0;
 	unsigned int o, u, x, X;
-	void *p;
-	char *S;
 
 	switch (f)
 	{
@@ -75,11 +73,11 @@ int out_pr1nt(char f, va_list *arg_list)
 		u = va_arg(arg_list, unsigned int);
 		token += print_unsint(u);
 		break;
-	case 'x'
+	case 'x':
 		x = va_arg(arg_list, unsigned int);
 	token += print_unshex(x, 'l');
 		break;
-	case 'X'
+	case 'X':
 		X = va_arg(arg_list, unsigned int);
 	token += print_unshex(X, 'u');
 		break;

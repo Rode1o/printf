@@ -14,13 +14,13 @@ int print_rev(char *str)
 	if (str == NULL)
 	{
 		_printf("(null)");
-		return(6);
+		return (6);
 	}
-	for (a = 0; str [a]; a++)
+	for (a = 0; str[a]; a++)
 		;
-	for (; str[x - 1]; x--)
+	for (; str[a - 1]; a--)
 	{
-		_putchar(str[x - 1]);
+		_putchar(str[a - 1]);
 		token++;
 	}
 	return (token);

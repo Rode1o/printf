@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 			er = out_print(format[i], &arg_list);
 			if (er < 0)
 				return (-1);
-			token =+ er;
+			token += er;
 		}
 		else
 		{

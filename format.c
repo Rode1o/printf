@@ -9,6 +9,6 @@
 int format(char f)
 {
 	_putchar('%');
-	_putcchar(f);
+	_putchar(f);
 	return (2);
 }

@@ -13,7 +13,7 @@ int print_unsint(unsigned int a)
 	if (a / 10)
 		token += print_unsint(a / 10);
 
-	_putchar((n % 10) + '0');
+	_putchar((a % 10) + '0');
 	token++;
 
 	return (token);
