@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_bin - prints an unsigned int in binary
+ * print_bin - prints an unsigned int in base 2 or binary
  * @a: unsigned int to be printed in binary
  *
  * Return: number of characters printed
