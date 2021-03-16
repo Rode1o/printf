@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_octal - prints an unsigned int in octal
+ * print_octal - prints an unsigned int on base 8
  * @a: int to be printed
  *
  * Return: number of characters printed
