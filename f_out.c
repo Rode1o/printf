@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * out_print - chooses formatting function based on specifiers
+ * out_print - selects format function based on specifiers
  * @f: character string
  * @arg_list: arguments list used to replace format specifiers
  * Return: the number of characters printed excluding the null byte
@@ -10,7 +10,7 @@ int out_print(char f, va_list *arg_list)
 {
 	unsigned char c;
 	char *s, *r, *R;
-	int token = 0, d, i;
+	int token = 0, d;
 	unsigned int b;
 
 	switch (f)
@@ -51,7 +51,7 @@ int out_print(char f, va_list *arg_list)
 }
 
 /**
- * out_pr1nt - chooses formatting function based on specifier
+ * out_pr1nt - selects format function based on specifier
  * @f: format specifier
  * @arg_list: list of arguments used to replace format specifiers in string
  *
