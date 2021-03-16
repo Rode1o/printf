@@ -43,7 +43,8 @@ signed integer (int)
 	<li> Update betty, README</li>
 	</h5>
 	</summary>
-	
+</details>
+
 ## Environment ##
 * Language: C
 * OS: Ubuntu 14.04 LTS
