@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * _printf - parses input string and calls f_output to choose which function
- * to use for formatting based on specifiers
- * @format: pointer to string containing specifiers
+ * _printf - gets an output from a given format
+ * @format: pointer to string of specifier
  *
- * Return: number of characters printed
+ * Return: the number of characters printed (excluding the null
+ * byte used to end output to strings)
  */
 
 int _printf(const char *format, ...)
