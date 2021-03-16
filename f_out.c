@@ -10,7 +10,7 @@ int out_print(char f, va_list *arg_list)
 {
 	unsigned char c;
 	char *s, *r, *R;
-	int token = 0, d;
+	int token = 0, d, i;
 	unsigned int b;
 
 	switch (f)
