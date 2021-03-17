@@ -6,7 +6,7 @@
 This project is a mini printf function that we can find in the library <stdio.h>, if we are using the C Language. Basically it allows us to print any argument given to standard or terminal output. This means that we can print any combination of strings, integers and other different data types.
 
 # HOW IT WORKS? #
-<img src="https://github.com/Rode1o/printf/blob/main/Diseño%20sin%20título%20(1).gif" />
+<img src="https://github.com/Rode1o/printf/blob/main/How_it_works.gif" />
 
 ### Note ###
 If you want to review the manual of our _printf function you can execute
